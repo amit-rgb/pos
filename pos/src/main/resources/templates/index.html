@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <title>Part Of Speech Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Parts Of Speach Finder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about">About Website</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</head>
+
+<body>
+
+<div class="container-full-bg bg-secondary text-white" style="height:100vh;">
+
+    <div class="jumbotron jumbotron-fluid bg-secondary">
+        <div class="container">
+            <h1>Welcome to Parts of speech</h1>
+            <p>This website would give the part of speech for each word of your sentence</p>
+            <p> For Instance -: "God is almighty" has below below parts of speech for its each words-</p>
+            <table>
+                <thead class="thead-dark">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="mr-2">Original Text</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mr-2">Part Of Speech</div>
+                    </div>
+                </div>
+                </thead>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="mr-2">God</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="ml-2">NOUN_PROPER_SINGULAR</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="mr-2">is</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="ml-2">VERB_SINGULAR_PRESENT_THIRD_PERSON</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="mr-2">almighty</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="ml-2">ADJECTIVE</div>
+                    </div>
+                </div>
+            </table>
+        </div>
+
+    <form action="/pos" method="post">
+        <table class="table table-hover">
+            <tr>
+                <div class="form-group mx-auto col-lg-4 text-white">
+                    <td>
+                        <label for="input" class="text-white">Enter Sentence</label>
+                    </td>
+                    <div class="p-10 mr-10 col-lg-8">
+                        <td>
+                            <textarea rows="4" cols="100" id="input" name ="input"></textarea>
+                        </td>
+                    </div>
+
+
+                </div>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div  style="width: 200px;">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</div>
+
+</body>
+</html>
